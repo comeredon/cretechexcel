@@ -21,7 +21,7 @@ jobs:
     - name: Run ARM deploy
       uses: azure/arm-deploy@v1
       with:
-        subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-        resourceGroupName: ${{ secrets.AZURE_RG }}
+        subscriptionId: ${{ secrets.AZURE_CREDENTIALS }}
+        resourceGroupName: ${{ secrets.AZURE_CREDENTIALS }}
         template: ./InfrastructureAsCode/main.bicep
         parameters: environment=${{ env.targetEnv }}
