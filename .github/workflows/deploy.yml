@@ -25,4 +25,3 @@ jobs:
         resourceGroupName: ${{ secrets.AZURE_RG }}
         template: ./InfrastructureAsCode/main.bicep
         parameters: environment=${{ env.targetEnv }}
-        ressourceGroupName: apptechexcelcre
