@@ -15,7 +15,18 @@ jobs:
       # Log into Azure
     - uses: azure/login@v1
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        creds: ${
+  "clientId": "988b76bf-b531-4e46-a9d0-608b8994e4de",
+  "clientSecret": "OAX8Q~1zlVBFDh0SMLHfSS9BRZbCapt6M5gC~aJq",
+  "subscriptionId": "768624da-b8ac-4259-a714-72e7c405fabe",
+  "tenantId": "b03ccdf7-ae22-4195-ab70-daee796444cd",
+  "activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
+  "resourceManagerEndpointUrl": "https://management.azure.com/",
+  "activeDirectoryGraphResourceId": "https://graph.windows.net/",
+  "sqlManagementEndpointUrl": "https://management.core.windows.net:8443/",
+  "galleryEndpointUrl": "https://gallery.azure.com/",
+  "managementEndpointUrl": "https://management.core.windows.net/"
+}
 
       # Deploy ARM template
     - name: Run ARM deploy
